@@ -1,0 +1,103 @@
+/**
+ * Import base style
+ */
+@import "./base.less";
+
+/**
+ * Here comes specific style for a certain test program.
+ */
+
+
+#flash{
+	min-width: 1280px;
+	min-height: 720px;
+	
+	/*text-align: center;*/
+
+	margin-left: -200px;
+	padding: 0;
+	border-radius: 0;
+
+	position:relative;
+
+	/*position: absolute;
+	top: 0;
+	left: 0;*/
+}
+
+#imgs{
+	display:none;
+}
+
+#mainCanvas{
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+
+#color{
+	position:absolute;
+
+	top: 600px;
+
+	canvas{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+	#screenBtn{
+		position: absolute;
+		top: 0px;
+		left: 750px;
+
+		width: 150px;
+		height: 60px;
+
+		border: 1px solid gray;
+	}
+	#colorBtn{
+		position:absolute;
+		top:60px;
+		left: 750px;
+
+		width:150px;
+		height:60px;
+
+		border: 1px solid gray;
+	}
+}
+
+#chat{
+	position:absolute;
+	top: 0px;
+	left: 900px;
+
+	width: 380px;
+	height: 720px;
+
+	background-color: light-gray;
+	border-left: 10px double gray;
+
+	#log{
+		position:relative;
+		height:670px;
+		width: 370px;
+		overflow-y: scroll;
+		overflow-x: hidden;
+
+		.chatMsg{
+			background-color: #FEFEFE;
+			padding: 5px 10px;
+			width: 335px;
+			border-bottom: solid 1px;
+		}
+	}
+	#chatBox{
+		padding-left: 20px;
+		border-top: 3px solid gray;
+		width: 350px;
+	}
+	#msgTxt{
+		width: 280px;
+	}
+}
